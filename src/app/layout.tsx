@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://acdyon-ai-navigator.vercel.app"),
+  
   title: "AcdyOn AI Navigator — Your Next Career Move, Mapped by AI",
 
   description:
