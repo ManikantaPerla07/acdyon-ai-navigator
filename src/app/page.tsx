@@ -4,6 +4,7 @@ import ProblemSection from "@/components/ProblemSection";
 import HowItWorks from "@/components/HowItWorks";
 import ExamplePath from "@/components/ExamplePath";
 import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HowItWorks />
       <ExamplePath />
       <FinalCTA />
+      <Footer />
     </main>
   );
 }
