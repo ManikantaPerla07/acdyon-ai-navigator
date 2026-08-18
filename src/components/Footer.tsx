@@ -21,7 +21,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-5">
             <a
-              href="#"
+              href="#product"
               className="text-xs text-[#777] transition-colors hover:text-[#111]"
             >
               Product

@@ -21,7 +21,7 @@ export default function Image() {
           background: "#f5f5f2",
           padding: "72px",
           color: "#111111",
-          fontFamily: "Arial",
+          fontFamily: "Arial, Helvetica, sans-serif",
         }}
       >
         <div
@@ -29,20 +29,22 @@ export default function Image() {
             display: "flex",
             alignItems: "center",
             gap: "16px",
-            fontSize: 28,
+            fontSize: "28px",
             fontWeight: 600,
           }}
         >
           <div
             style={{
-              width: 48,
-              height: 48,
-              borderRadius: 16,
-              background: "#111111",
-              color: "#ffffff",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              width: "48px",
+              height: "48px",
+              borderRadius: "16px",
+              background: "#111111",
+              color: "#ffffff",
+              fontSize: "24px",
+              fontWeight: 700,
             }}
           >
             A
@@ -60,34 +62,41 @@ export default function Image() {
         >
           <div
             style={{
-              fontSize: 22,
+              display: "flex",
+              fontSize: "22px",
               color: "#5b5cf0",
               fontWeight: 600,
+              letterSpacing: "0.08em",
             }}
           >
-            AC DYON AI LAB
+            ACDYON AI LAB
           </div>
 
           <div
             style={{
-              fontSize: 72,
+              display: "flex",
+              flexDirection: "column",
+              fontSize: "72px",
               lineHeight: 1,
               fontWeight: 700,
               letterSpacing: "-0.05em",
-              maxWidth: 900,
+              maxWidth: "900px",
             }}
           >
-            Your next career move,
-            <br />
-            <span style={{ color: "#888888" }}>mapped by AI.</span>
+            <span>Your next career move,</span>
+
+            <span style={{ color: "#888888" }}>
+              mapped by AI.
+            </span>
           </div>
 
           <div
             style={{
-              fontSize: 28,
+              display: "flex",
+              fontSize: "28px",
               lineHeight: 1.4,
               color: "#666666",
-              maxWidth: 780,
+              maxWidth: "780px",
             }}
           >
             Turn your career goal into a focused learning path with clear next
@@ -97,7 +106,8 @@ export default function Image() {
 
         <div
           style={{
-            fontSize: 20,
+            display: "flex",
+            fontSize: "20px",
             color: "#999999",
           }}
         >

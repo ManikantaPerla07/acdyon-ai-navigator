@@ -32,7 +32,7 @@ export default function FinalCTA() {
             </p>
 
             <a
-              href="#"
+              href="product"
               className="group mt-9 inline-flex items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#111] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#f2f2f2]"
             >
               Build My Path

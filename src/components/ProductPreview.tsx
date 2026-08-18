@@ -18,7 +18,10 @@ export default function ProductPreview() {
   const path = careerPaths[selectedRole];
 
   return (
-    <div className="relative mx-auto w-full max-w-[650px]">
+    <div
+  id="product"
+  className="relative mx-auto w-full max-w-[650px]"
+>
       {/* Ambient light */}
       <div className="pointer-events-none absolute -inset-8 rounded-[48px] bg-[#dfe1ff]/40 blur-[90px]" />
 
