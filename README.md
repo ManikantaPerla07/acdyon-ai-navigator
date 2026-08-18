@@ -1,5 +1,3 @@
-Absolutely. We are at the **final documentation stage** now.
-
 
 # AcdyOn AI Navigator
 
@@ -142,5 +140,3 @@ The career paths and readiness values shown in the interface are illustrative pr
 ## Author
 
 Manikanta Perla
-
-````
