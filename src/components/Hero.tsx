@@ -3,10 +3,10 @@ import ProductPreview from "./ProductPreview";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden px-5 pb-24 pt-16 sm:px-8 sm:pb-32 sm:pt-20 lg:pb-36 lg:pt-24">
+    <section className="relative overflow-hidden px-5 pb-14 pt-10 sm:px-8 sm:pb-20 sm:pt-16 lg:pb-24 lg:pt-18">
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[700px] w-[900px] -translate-x-1/2 rounded-full bg-[#dfe0ff]/30 blur-[120px]" />
 
-      <div className="mx-auto grid max-w-[1280px] items-center gap-16 lg:grid-cols-[0.88fr_1.12fr] lg:gap-20">
+      <div className="mx-auto grid max-w-[1280px] items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
         <div className="max-w-[700px]">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-black/[0.07] bg-white/80 px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#666] backdrop-blur-sm">
             <Sparkles size={13} className="text-[#5b5cf0]" />
