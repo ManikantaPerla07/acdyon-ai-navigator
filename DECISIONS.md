@@ -1,86 +1,42 @@
 # Design & Engineering Decisions
 
-## 1. Product direction
+## Track choice
 
-I treated the brief as a product-design problem rather than a page-building exercise.
+I chose **Part 2 — The Premium Home Page** rather than Part 1.
 
-The core experience is an AI career navigator that helps a user move from their current skills toward a target career direction. The landing page therefore prioritizes the interactive product preview instead of relying only on marketing copy.
+The first DECISIONS.md question asks about an ingestion strategy, which is specific to the Part 1 scraper track. I therefore did not implement or claim an ingestion pipeline. For Part 2, I made the equivalent architectural choice of building a data-driven interactive product experience rather than a static marketing mock.
 
-## 2. Above-the-fold priority
+## 1. Why this implementation approach over the obvious alternative?
 
-The hero was designed around one clear message:
+I chose **Next.js + React + TypeScript** with a reusable, data-driven component structure instead of building a static HTML/CSS page.
 
-**Your next career move, mapped by AI.**
+The obvious alternative was a static mock containing fixed screenshots and text. I rejected that because the brief explicitly asks for a product that is shown rather than merely described, and a meaningful interaction earns additional signal.
 
-The product preview sits beside the message so the evaluator can understand the concept immediately without needing to read the entire page.
+The career selector therefore reads from a shared career-path data structure. Changing the selected role updates the target role, description, recommended focus areas, readiness percentage and progress visualization.
 
-## 3. Interaction choice
+## 2. One trade-off made under the time limit
 
-The primary interaction is the career selector inside the product preview.
+I intentionally kept the product as a **frontend concept** rather than implementing authentication, persistent user profiles, a backend recommendation service, or real AI inference.
 
-Changing the selected role updates:
+This allowed me to spend the available time on the parts the challenge directly evaluates: product presentation, interaction quality, responsiveness, motion restraint, accessibility and production deployment.
 
-- target role
-- supporting description
-- recommended focus areas
-- readiness percentage
-- progress visualization
+With a real week, I would add a real onboarding flow, persisted user profiles, an API-backed recommendation service, explainable recommendation logic, analytics and more comprehensive automated testing.
 
-This gives the interface a meaningful state change instead of decorative animation.
+## 3. AI tools used and what I personally verified
 
-## 4. Visual direction
+I used AI assistance during implementation for component scaffolding, copy exploration, debugging, responsive-layout iteration and production troubleshooting.
 
-I used a restrained editorial/product aesthetic:
+I personally verified and changed the generated work throughout the process. Examples include fixing the Next.js root-layout configuration, TypeScript/path-alias issues, responsive behavior, Open Graph generation, the deprecated Edge Runtime configuration, anchor navigation, production metadata and deployment configuration.
 
-- warm off-white background
-- black typography
-- muted gray hierarchy
-- restrained indigo accents
-- rounded product surfaces
-- soft shadows and ambient lighting
+I also verified the finished product through:
 
-The goal was to make the interface feel like a premium AI product rather than a generic dashboard.
+- `npm run build`
+- 390 × 844 responsive testing
+- 1440 × 900 responsive testing
+- keyboard navigation
+- interactive career-role switching
+- in-page CTA/navigation behavior
+- browser console checks
+- live Vercel testing
 
-## 5. Motion
-
-Motion is intentionally limited.
-
-Framer Motion is used for:
-
-- career-path state transitions
-- progress changes
-- subtle section reveals
-
-The goal is to make state changes understandable without turning the page into an animation showcase.
-
-## 6. Responsive behavior
-
-The layout was designed and tested at the required 390px and 1440px widths.
-
-On mobile, multi-column sections collapse into readable vertical flows while preserving the same product hierarchy.
-
-## 7. Content honesty
-
-The experience explicitly labels the example career pathway as an **illustrative example**.
-
-The project does not present fabricated testimonials, customer results, or claims of real-world AI accuracy.
-
-## 8. Engineering decisions
-
-The implementation uses:
-
-- Next.js App Router
-- TypeScript
-- reusable React components
-- data-driven career path configuration
-- programmatic Open Graph generation
-- semantic sections and keyboard-accessible controls
-- Vercel for production deployment
-
-The UI was intentionally kept as a focused frontend concept rather than introducing unnecessary backend infrastructure.
-
-## 9. Trade-offs
-
-I prioritized depth in the central interaction and product presentation over adding many disconnected features.
-
-A more complete production system would eventually require real user-profile input, backend persistence, authentication, recommendation logic, and a production AI pipeline. Those are intentionally outside the scope of this frontend challenge.
+The final experience is intentionally labelled as a **conceptual product** and the pathway/readiness values are presented as illustrative rather than real customer outcomes.
